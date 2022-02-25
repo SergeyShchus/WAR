@@ -1,6 +1,6 @@
 ## War maps
 
-Here's my sample map website!
+Це мапа війни!
 
 <iframe src="war-map.html" height="500" width="500"></iframe>
 
