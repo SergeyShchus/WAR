@@ -1,6 +1,6 @@
 ## War maps
 
-Це мапа війни!
+This is a map of the war of aggression between Russia and Belarus against Ukraine!
 
 <iframe src="war-map.html" height="500" width="500"></iframe>
 
