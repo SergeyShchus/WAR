@@ -77,6 +77,26 @@
         marker_561ebda602b44aec981e98fc27c0f6a0.bindPopup(popup_3ba253b2a4e94acb9ef7170d97653139)
         ;
 
-           
+   
+        var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.546996, 30.1526746],
+                {}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b);
+        
     
-</script>
+            var popup_3ba253b2a4e94acb9ef7170d97653139 = L.popup();
+
+            var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+
+
+
+
