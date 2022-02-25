@@ -45,7 +45,7 @@
                 {
                     center: [50.546998, 30.152676],
                     crs: L.CRS.EPSG3857,
-                    zoom: 5,
+                    zoom: 9,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -85,6 +85,15 @@
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h1> Marker </h1><p>На харківському напрямку знищено російські ракетні системи (ГРАД)</p><img src='./image/tanks_small.jpg' />")
             .openPopup;
+
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.396069, 30.506262],
+                {draggable: true},
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h1> Marker </h1><p>У Києві на вулиці Васильківській, 3 (біля станції метро “Голосіївська”)пошкоджено житлові будівлі.Руйнування зчинили крилата авіаційна ракета Х-31 ЗС Росії.</p><img src='./image/krylata-aviaczijna-raketa-h-31-posered-kyyeva-na-vasylkivskij-3-obstril.jpg' />")
+            .openPopup;
+
 
 ;
 
