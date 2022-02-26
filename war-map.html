@@ -38,6 +38,8 @@
             <div class="folium-map" id="map_35e7b192f95e41ce860f860043f86c3b" ></div>
         
 </body>
+
+
 <script>    
     
             var map_35e7b192f95e41ce860f860043f86c3b = L.map(
@@ -59,7 +61,24 @@
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b);
-        
+
+         // Icon options
+         var iconOptions = {
+            iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/image/explosion-icon-12.png',
+            iconSize: [50, 50]
+         }
+
+
+         // Creating a custom icon
+         var customIcon = L.icon(iconOptions);
+
+
+         // Creating Marker Options
+         var markerOptions = {
+            icon: customIcon
+         }
+
+
     
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [50.546998, 30.152676],
@@ -379,7 +398,8 @@
 
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [51.040759, 31.876766],
-                {draggable: true},
+                
+                markerOptions
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 25.02.2022 Ніжин </h3><p>Fights for the city. Бої за місто ")
             .openPopup;
