@@ -53,7 +53,10 @@
                 }
             );
 
-            
+            var greenIcon = new LeafIcon({
+             iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-green.png',
+             shadowUrl: 'http://leafletjs.com/examples/custom-icons/leaf-shadow.png'
+            });
 
         
     
@@ -375,6 +378,7 @@
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [46.658608, 32.641659],
                 {draggable: true},
+                {icon: greenIcon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 25.02.2022 Херсон </h3><p>Victory! Місто відбито у ворога. Слава Україні! ")
             .openPopup;
