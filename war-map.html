@@ -382,10 +382,14 @@
             .openPopup;
 
 
+
+            var FIRESicon = L.icon({
+                 iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/fires_red.png?raw=true',
+                 iconSize: [40, 40]
+             });
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [51.040759, 31.876766],
-                
-                markerOptions
+                {icon: FIRESicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 25.02.2022 Ніжин </h3><p>Fights for the city. Бої за місто ")
             .openPopup;
