@@ -82,6 +82,11 @@
                  iconSize: [25, 25]
              });
 
+             var DEADicon = L.icon({
+                 iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/dead_p.png?raw=true',
+                 iconSize: [25, 25]
+             });            
+
         var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [50.087890, 36.246300],
                 {draggable: true},
@@ -390,16 +395,23 @@
                 [51.040759, 31.876766],
                 {icon: FIRESicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
-            .bindPopup ("<h3> 25.02.2022 Ніжин </h3><p>Fights for the city. Бої за місто ")
+            .bindPopup ("<h3> 25.02.2022 Ніжин </h3><p>Fights for the city. Бої за місто </p>")
             .openPopup;
 
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [47.596978, 37.493812],
                 {icon: UAicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
-            .bindPopup ("<h3> 25.02.2022 Волноваха </h3><p>Victory! 🔥 Збройні сили України відбили Волноваху! Слава Україні! ")
+            .bindPopup ("<h3> 27.02.2022 Волноваха </h3><p>Victory! 🔥 Збройні сили України відбили Волноваху! Слава Україні! </p>")
             .openPopup;
 
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [51.040759, 31.876766],
+                {icon: DEADicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 27.02.2022 Прилуки </h3><p>A tank company of the Russian army was defeated near Pryluky. Біля Прилук розбили танкову роту російської армії </p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/priluki_small.jpeg?raw=true'/>")
+            .openPopup;
 
 ;
 
