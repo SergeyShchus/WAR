@@ -53,12 +53,6 @@
                 }
             );
 
-            var greenIcon = new LeafIcon({
-             iconUrl: '/Users/sergiishchus/Documents/WAR/sample-map-website-diagram.png'
-
-            });
-
-        
     
             var tile_layer_6ce7230faae94d6e9c2d3319d024eb2c = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -375,10 +369,14 @@
             .openPopup;
 
 
+            var century21icon = L.icon({
+                 iconUrl: 'https://i.ibb.co/sJrMTdz/favicon-32x32.png',
+                 iconSize: [20, 20]
+             });
+
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [46.658608, 32.641659],
-                {draggable: true},
-                {icon: greenIcon}
+                {icon: century21icon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 25.02.2022 Херсон </h3><p>Victory! Місто відбито у ворога. Слава Україні! ")
             .openPopup;
