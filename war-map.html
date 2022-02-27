@@ -77,6 +77,11 @@
         marker_561ebda602b44aec981e98fc27c0f6a0.bindPopup(popup_3ba253b2a4e94acb9ef7170d97653139)
         ;
 
+        var ARTicon = L.icon({
+                 iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/artillery_red.png?raw=true',
+                 iconSize: [25, 25]
+             });       
+
         var FIRESicon = L.icon({
                  iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/fires_red.png?raw=true',
                  iconSize: [25, 25]
@@ -425,6 +430,22 @@
                 {icon: DEADicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 27.02.2022 Буча </h3><p>‼ ️Russian personnel in the city of Bucha destroyed! Особовий склад РФ в місті Буча знищено!</p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/bucha_small.jpeg?raw=true'/>")
+            .openPopup;
+
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.777060, 25.320185],
+                {icon: ARTicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 27.02.2022 Арциз </h3><p>Ракетний обстріл міста")
+            .openPopup;
+
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.777060, 25.320185],
+                {icon: ARTicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 27.02.2022 Балаклія </h3><p>Ракетний обстріл міста. Збито два ворожих літака - уточнюється")
             .openPopup;
 
 ;
