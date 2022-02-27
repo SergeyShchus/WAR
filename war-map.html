@@ -62,21 +62,13 @@
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b);
 
-         // Icon options
-         var iconOptions = {
-            iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/image/explosion-icon-12.png',
-            iconSize: [50, 50]
-         }
+
+            var greenIcon = new LeafIcon({
+            iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-green.png',
+            shadowUrl: 'http://leafletjs.com/examples/custom-icons/leaf-shadow.png'
+            })
 
 
-         // Creating a custom icon
-         var customIcon = L.icon(iconOptions);
-
-
-         // Creating Marker Options
-         var markerOptions = {
-            icon: customIcon
-         }
 
 
     
@@ -390,7 +382,7 @@
 
             var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [46.658608, 32.641659],
-                
+                , {icon: greenIcon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 25.02.2022 Херсон </h3><p>Victory! Місто відбито у ворога. Слава Україні! ")
             .openPopup;
