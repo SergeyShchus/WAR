@@ -90,7 +90,12 @@
              var DEADicon = L.icon({
                  iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/dead_p.png?raw=true',
                  iconSize: [25, 25]
-             });            
+             });     
+
+            var MOLOTOVicon = L.icon({
+                 iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/molotov_blue.png?raw=true',
+                 iconSize: [25, 25]
+             });         
 
         var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
                 [50.087890, 36.246300],
@@ -448,6 +453,22 @@
             .bindPopup ("<h3> 27.02.2022 Балаклія </h3><p>Ракетний обстріл міста. Збито два ворожих літака - уточнюється")
             .openPopup;
 
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.777060, 25.320185],
+                {icon: ARTicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 27.02.2022 Прип'ять </h3><p>Перемовини щодо припинення вогню")
+            .openPopup;
+
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [47.113632, 37.542129],
+                {icon: MOLOTOVicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 25.02.2022 Маріуполь </h3><p>The struggle for Mariupol continues. As of now, the tankers of the Azov Regiment have already destroyed 2 enemy BMPs and 1 Tiger. The fighting continues.  Триває боротьба за Маріуполь. Станом на зараз танкісти полку "Азов" вже знищили 2 ворожі БМП та 1 «Тигр». Бої тривають</p>")
+            .openPopup;
+            
 ;
 
 
