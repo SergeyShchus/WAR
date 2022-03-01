@@ -80,7 +80,13 @@
         var ARTicon = L.icon({
                  iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/artillery_red.png?raw=true',
                  iconSize: [25, 25]
-             });       
+             });   
+
+             
+             var Fighticon = L.icon({
+                 iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/fights_blue.png?raw=true',
+                 iconSize: [25, 25]
+             });                 
 
         var FIRESicon = L.icon({
                  iconUrl: 'https://github.com/SergeyShchus/WAR/blob/main/icon/fires_red.png?raw=true',
@@ -503,6 +509,13 @@
                 {icon: DEADicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
             .bindPopup ("<h3> 28.02.2022 Буча > </h3><p>‼ ️A column of Russian equipment was destroyed near the village of Gorodnya! Колону техники РФ знищено в місті Буча!</p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/bucha3_small.PNG?raw=true'/>")
+            .openPopup;
+
+            var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
+                [50.544241, 30.230728],
+                {icon: DEADicon}
+            ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
+            .bindPopup ("<h3> 01.03.2022 Траса > </h3><p>The struggle continues! Боротьба триває!</p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/trasa_small.jpeg?raw=true'/>")
             .openPopup;
 
             
