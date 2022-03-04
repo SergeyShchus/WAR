@@ -801,7 +801,9 @@
                 [47.007433, 32.125680],
                 {icon: DEADicon}
             ).addTo(map_35e7b192f95e41ce860f860043f86c3b)
-            .bindPopup ("<h3> 03.03.2022 Калинівка > </h3><p>Знищено міст разом з російськими танками 🇺🇦Все буде Україна!  </p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/kalinivka_small.jpeg?raw=true'/>")
+            .bindPopup ("<h3> 03.03.2022 Калинівка > </h3><p>Знищено міст разом з російськими танками 🇺🇦Все буде Україна!  </p><img src='https://github.com/SergeyShchus/WAR/blob/main/image/kalinivka_small.jpeg?raw=true'/>".format(
+          self.picture.url,
+          self.description)
             .openPopup;         
 
              var marker_561ebda602b44aec981e98fc27c0f6a0 = L.marker(
