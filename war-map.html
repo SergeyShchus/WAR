@@ -1259,6 +1259,17 @@
             
 ;
 
+// Function to set popup contents
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent(
+            "Це вільна земля вільних людей!"
+        )
+        .openOn(map_35e7b192f95e41ce860f860043f86c3b);
+}
 
+// Add event listener for click events on the map
+map_35e7b192f95e41ce860f860043f86c3b.addEventListener("click", onMapClick);
   
 </script>
